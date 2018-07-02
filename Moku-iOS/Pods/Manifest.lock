@@ -1,0 +1,41 @@
+PODS:
+  - MongoSwiftMobile (4.0.0)
+  - StitchCore (4.0.0):
+    - StitchCoreSDK (~> 4.0.0)
+  - StitchCoreRemoteMongoDBService (4.0.0):
+    - StitchCoreSDK (~> 4.0.0)
+  - StitchCoreSDK (4.0.0):
+    - MongoSwiftMobile (~> 4.0.0)
+  - StitchRemoteMongoDBService (4.0.0):
+    - StitchCore (~> 4.0.0)
+    - StitchCoreRemoteMongoDBService (~> 4.0.0)
+  - StitchSDK (4.0.0):
+    - StitchSDK/StitchSDK (= 4.0.0)
+  - StitchSDK/StitchRemoteMongoDBService (4.0.0):
+    - StitchRemoteMongoDBService (~> 4.0.0)
+  - StitchSDK/StitchSDK (4.0.0):
+    - StitchSDK/StitchRemoteMongoDBService
+
+DEPENDENCIES:
+  - StitchSDK (~> 4.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MongoSwiftMobile
+    - StitchCore
+    - StitchCoreRemoteMongoDBService
+    - StitchCoreSDK
+    - StitchRemoteMongoDBService
+    - StitchSDK
+
+SPEC CHECKSUMS:
+  MongoSwiftMobile: 6a2cf9f5e27f9be7fb0eeb3440765ba32d236c2f
+  StitchCore: 55514801894888f2c2daaa12d7176c1d2637722b
+  StitchCoreRemoteMongoDBService: 2f76803f5795bfe0008b06197bae494a034f4211
+  StitchCoreSDK: 1632259c0f561dd68aeaaf656424834fd931c13c
+  StitchRemoteMongoDBService: d1327e8e4fffe7b6c76da2d0117e23e03f365067
+  StitchSDK: 35035630829a60935346a79cfbd139cb7d555384
+
+PODFILE CHECKSUM: 57a30ef6370c89c98616460d10bcc0c2ec14b3ea
+
+COCOAPODS: 1.5.3

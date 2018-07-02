@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		9E0BB1F420E9AD3500ED4385 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0BB1F320E9AD3500ED4385 /* AppDelegate.swift */; };
-		9E0BB1F620E9AD3500ED4385 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0BB1F520E9AD3500ED4385 /* ViewController.swift */; };
+		9E0BB1F620E9AD3500ED4385 /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0BB1F520E9AD3500ED4385 /* ItemsTableViewController.swift */; };
 		9E0BB1F920E9AD3500ED4385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E0BB1F720E9AD3500ED4385 /* Main.storyboard */; };
 		9E0BB1FC20E9AD3500ED4385 /* Moku.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E0BB1FA20E9AD3500ED4385 /* Moku.xcdatamodeld */; };
 		9E0BB1FE20E9AD3700ED4385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E0BB1FD20E9AD3700ED4385 /* Assets.xcassets */; };
 		9E0BB20120E9AD3700ED4385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E0BB1FF20E9AD3700ED4385 /* LaunchScreen.storyboard */; };
+		9E7A11AF20E9B16200399AE8 /* Stitch-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E7A11AE20E9B16200399AE8 /* Stitch-Info.plist */; };
+		9E7A11B320E9B4C900399AE8 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7A11B220E9B4C900399AE8 /* ItemCell.swift */; };
+		D42C52AE77BF47274851CAB5 /* Pods_Moku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB75B61C73F42AF5F3243E96 /* Pods_Moku.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D8B8CF14065D791087AA45B /* Pods-Moku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moku.release.xcconfig"; path = "Pods/Target Support Files/Pods-Moku/Pods-Moku.release.xcconfig"; sourceTree = "<group>"; };
 		9E0BB1F020E9AD3500ED4385 /* Moku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E0BB1F320E9AD3500ED4385 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9E0BB1F520E9AD3500ED4385 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9E0BB1F520E9AD3500ED4385 /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
 		9E0BB1F820E9AD3500ED4385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E0BB1FB20E9AD3500ED4385 /* Moku.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Moku.xcdatamodel; sourceTree = "<group>"; };
 		9E0BB1FD20E9AD3700ED4385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E0BB20020E9AD3700ED4385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E0BB20220E9AD3700ED4385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E7A11AE20E9B16200399AE8 /* Stitch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Stitch-Info.plist"; sourceTree = "<group>"; };
+		9E7A11B220E9B4C900399AE8 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		AB75B61C73F42AF5F3243E96 /* Pods_Moku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1B96F7F16547FDAEC03EA8 /* Pods-Moku.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moku.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Moku/Pods-Moku.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D42C52AE77BF47274851CAB5 /* Pods_Moku.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C6187515577C5E5D1F551FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD1B96F7F16547FDAEC03EA8 /* Pods-Moku.debug.xcconfig */,
+				1D8B8CF14065D791087AA45B /* Pods-Moku.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7A579ABECBCCB40990D9A603 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB75B61C73F42AF5F3243E96 /* Pods_Moku.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9E0BB1E720E9AD3500ED4385 = {
 			isa = PBXGroup;
 			children = (
 				9E0BB1F220E9AD3500ED4385 /* Moku */,
 				9E0BB1F120E9AD3500ED4385 /* Products */,
+				1C6187515577C5E5D1F551FC /* Pods */,
+				7A579ABECBCCB40990D9A603 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +84,33 @@
 		9E0BB1F220E9AD3500ED4385 /* Moku */ = {
 			isa = PBXGroup;
 			children = (
-				9E0BB1F320E9AD3500ED4385 /* AppDelegate.swift */,
-				9E0BB1F520E9AD3500ED4385 /* ViewController.swift */,
-				9E0BB1F720E9AD3500ED4385 /* Main.storyboard */,
+				9E7A11B120E9B1CE00399AE8 /* Source */,
+				9E7A11B020E9B17C00399AE8 /* Resources */,
 				9E0BB1FD20E9AD3700ED4385 /* Assets.xcassets */,
-				9E0BB1FF20E9AD3700ED4385 /* LaunchScreen.storyboard */,
-				9E0BB20220E9AD3700ED4385 /* Info.plist */,
 				9E0BB1FA20E9AD3500ED4385 /* Moku.xcdatamodeld */,
 			);
 			path = Moku;
+			sourceTree = "<group>";
+		};
+		9E7A11B020E9B17C00399AE8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E0BB20220E9AD3700ED4385 /* Info.plist */,
+				9E7A11AE20E9B16200399AE8 /* Stitch-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9E7A11B120E9B1CE00399AE8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9E0BB1F320E9AD3500ED4385 /* AppDelegate.swift */,
+				9E0BB1F520E9AD3500ED4385 /* ItemsTableViewController.swift */,
+				9E0BB1F720E9AD3500ED4385 /* Main.storyboard */,
+				9E0BB1FF20E9AD3700ED4385 /* LaunchScreen.storyboard */,
+				9E7A11B220E9B4C900399AE8 /* ItemCell.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E0BB20520E9AD3700ED4385 /* Build configuration list for PBXNativeTarget "Moku" */;
 			buildPhases = (
+				2D45F30DA24E3E9A0F273F15 /* [CP] Check Pods Manifest.lock */,
 				9E0BB1EC20E9AD3500ED4385 /* Sources */,
 				9E0BB1ED20E9AD3500ED4385 /* Frameworks */,
 				9E0BB1EE20E9AD3500ED4385 /* Resources */,
+				4ABD10B70EF56D34DBA63AA0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,18 +176,79 @@
 				9E0BB20120E9AD3700ED4385 /* LaunchScreen.storyboard in Resources */,
 				9E0BB1FE20E9AD3700ED4385 /* Assets.xcassets in Resources */,
 				9E0BB1F920E9AD3500ED4385 /* Main.storyboard in Resources */,
+				9E7A11AF20E9B16200399AE8 /* Stitch-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D45F30DA24E3E9A0F273F15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moku-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4ABD10B70EF56D34DBA63AA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Moku/Pods-Moku-frameworks.sh",
+				"${PODS_ROOT}/MongoSwiftMobile/vendor/MobileSDKs/iphoneos/lib/libbson-1.0.0.0.0.dylib",
+				"${PODS_ROOT}/MongoSwiftMobile/vendor/MobileSDKs/iphoneos/lib/libbson-1.0.0.dylib",
+				"${PODS_ROOT}/MongoSwiftMobile/vendor/MobileSDKs/iphoneos/lib/libbson-1.0.dylib",
+				"${PODS_ROOT}/MongoSwiftMobile/vendor/MobileSDKs/iphoneos/lib/libmongoc-1.0.0.0.0.dylib",
+				"${PODS_ROOT}/MongoSwiftMobile/vendor/MobileSDKs/iphoneos/lib/libmongoc-1.0.0.dylib",
+				"${PODS_ROOT}/MongoSwiftMobile/vendor/MobileSDKs/iphoneos/lib/libmongoc-1.0.dylib",
+				"${BUILT_PRODUCTS_DIR}/MongoSwiftMobile/MongoSwiftMobile.framework",
+				"${BUILT_PRODUCTS_DIR}/StitchCore/StitchCore.framework",
+				"${BUILT_PRODUCTS_DIR}/StitchCoreRemoteMongoDBService/StitchCoreRemoteMongoDBService.framework",
+				"${BUILT_PRODUCTS_DIR}/StitchCoreSDK/StitchCoreSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/StitchRemoteMongoDBService/StitchRemoteMongoDBService.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libbson-1.0.0.0.0.dylib",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libbson-1.0.0.dylib",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libbson-1.0.dylib",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libmongoc-1.0.0.0.0.dylib",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libmongoc-1.0.0.dylib",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libmongoc-1.0.dylib",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MongoSwiftMobile.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StitchCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StitchCoreRemoteMongoDBService.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StitchCoreSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StitchRemoteMongoDBService.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Moku/Pods-Moku-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9E0BB1EC20E9AD3500ED4385 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E7A11B320E9B4C900399AE8 /* ItemCell.swift in Sources */,
 				9E0BB1FC20E9AD3500ED4385 /* Moku.xcdatamodeld in Sources */,
-				9E0BB1F620E9AD3500ED4385 /* ViewController.swift in Sources */,
+				9E0BB1F620E9AD3500ED4385 /* ItemsTableViewController.swift in Sources */,
 				9E0BB1F420E9AD3500ED4385 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,10 +391,11 @@
 		};
 		9E0BB20620E9AD3700ED4385 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD1B96F7F16547FDAEC03EA8 /* Pods-Moku.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Moku/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Moku/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,10 +409,11 @@
 		};
 		9E0BB20720E9AD3700ED4385 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D8B8CF14065D791087AA45B /* Pods-Moku.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Moku/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Moku/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
