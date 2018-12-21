@@ -15,6 +15,10 @@
 		9E0BB20120E9AD3700ED4385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E0BB1FF20E9AD3700ED4385 /* LaunchScreen.storyboard */; };
 		9E7A11AF20E9B16200399AE8 /* Stitch-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E7A11AE20E9B16200399AE8 /* Stitch-Info.plist */; };
 		9E7A11B320E9B4C900399AE8 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7A11B220E9B4C900399AE8 /* ItemCell.swift */; };
+		9EAA003B20E9CAB400235989 /* MokuAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAA003A20E9CAB400235989 /* MokuAPI.swift */; };
+		9EAA003E20E9CAD600235989 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAA003D20E9CAD600235989 /* Item.swift */; };
+		9EAA004020E9CF2700235989 /* MokuRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAA003F20E9CF2700235989 /* MokuRoutes.swift */; };
+		9EAA004220E9D0AC00235989 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAA004120E9D0AC00235989 /* ItemStore.swift */; };
 		D42C52AE77BF47274851CAB5 /* Pods_Moku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB75B61C73F42AF5F3243E96 /* Pods_Moku.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +34,10 @@
 		9E0BB20220E9AD3700ED4385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E7A11AE20E9B16200399AE8 /* Stitch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Stitch-Info.plist"; sourceTree = "<group>"; };
 		9E7A11B220E9B4C900399AE8 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		9EAA003A20E9CAB400235989 /* MokuAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MokuAPI.swift; sourceTree = "<group>"; };
+		9EAA003D20E9CAD600235989 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		9EAA003F20E9CF2700235989 /* MokuRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MokuRoutes.swift; sourceTree = "<group>"; };
+		9EAA004120E9D0AC00235989 /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 		AB75B61C73F42AF5F3243E96 /* Pods_Moku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1B96F7F16547FDAEC03EA8 /* Pods-Moku.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moku.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Moku/Pods-Moku.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,13 +112,49 @@
 		9E7A11B120E9B1CE00399AE8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				9EAA004320E9D47600235989 /* Store */,
+				9EAA003C20E9CAC300235989 /* UI */,
+				9EAA003920E9CA9400235989 /* Networking */,
+				9EAA003820E9CA4000235989 /* Models */,
 				9E0BB1F320E9AD3500ED4385 /* AppDelegate.swift */,
 				9E0BB1F520E9AD3500ED4385 /* ItemsTableViewController.swift */,
-				9E0BB1F720E9AD3500ED4385 /* Main.storyboard */,
-				9E0BB1FF20E9AD3700ED4385 /* LaunchScreen.storyboard */,
 				9E7A11B220E9B4C900399AE8 /* ItemCell.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		9EAA003820E9CA4000235989 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9EAA003D20E9CAD600235989 /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9EAA003920E9CA9400235989 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9EAA003A20E9CAB400235989 /* MokuAPI.swift */,
+				9EAA003F20E9CF2700235989 /* MokuRoutes.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9EAA003C20E9CAC300235989 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9E0BB1F720E9AD3500ED4385 /* Main.storyboard */,
+				9E0BB1FF20E9AD3700ED4385 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9EAA004320E9D47600235989 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				9EAA004120E9D0AC00235989 /* ItemStore.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +252,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Moku/Pods-Moku-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${PODS_ROOT}/MongoSwiftMobile/vendor/MobileSDKs/iphoneos/lib/libbson-1.0.0.0.0.dylib",
 				"${PODS_ROOT}/MongoSwiftMobile/vendor/MobileSDKs/iphoneos/lib/libbson-1.0.0.dylib",
 				"${PODS_ROOT}/MongoSwiftMobile/vendor/MobileSDKs/iphoneos/lib/libbson-1.0.dylib",
@@ -215,6 +260,7 @@
 				"${PODS_ROOT}/MongoSwiftMobile/vendor/MobileSDKs/iphoneos/lib/libmongoc-1.0.0.dylib",
 				"${PODS_ROOT}/MongoSwiftMobile/vendor/MobileSDKs/iphoneos/lib/libmongoc-1.0.dylib",
 				"${BUILT_PRODUCTS_DIR}/MongoSwiftMobile/MongoSwiftMobile.framework",
+				"${BUILT_PRODUCTS_DIR}/Observable/Observable.framework",
 				"${BUILT_PRODUCTS_DIR}/StitchCore/StitchCore.framework",
 				"${BUILT_PRODUCTS_DIR}/StitchCoreRemoteMongoDBService/StitchCoreRemoteMongoDBService.framework",
 				"${BUILT_PRODUCTS_DIR}/StitchCoreSDK/StitchCoreSDK.framework",
@@ -222,6 +268,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libbson-1.0.0.0.0.dylib",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libbson-1.0.0.dylib",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libbson-1.0.dylib",
@@ -229,6 +276,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libmongoc-1.0.0.dylib",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libmongoc-1.0.dylib",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MongoSwiftMobile.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Observable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StitchCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StitchCoreRemoteMongoDBService.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StitchCoreSDK.framework",
@@ -247,9 +295,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E7A11B320E9B4C900399AE8 /* ItemCell.swift in Sources */,
+				9EAA003E20E9CAD600235989 /* Item.swift in Sources */,
+				9EAA004220E9D0AC00235989 /* ItemStore.swift in Sources */,
 				9E0BB1FC20E9AD3500ED4385 /* Moku.xcdatamodeld in Sources */,
 				9E0BB1F620E9AD3500ED4385 /* ItemsTableViewController.swift in Sources */,
 				9E0BB1F420E9AD3500ED4385 /* AppDelegate.swift in Sources */,
+				9EAA004020E9CF2700235989 /* MokuRoutes.swift in Sources */,
+				9EAA003B20E9CAB400235989 /* MokuAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

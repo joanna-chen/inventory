@@ -1,5 +1,7 @@
 PODS:
+  - Alamofire (4.7.2)
   - MongoSwiftMobile (4.0.0)
+  - Observable (1.3.3)
   - StitchCore (4.0.0):
     - StitchCoreSDK (~> 4.0.0)
   - StitchCoreRemoteMongoDBService (4.0.0):
@@ -17,11 +19,15 @@ PODS:
     - StitchSDK/StitchRemoteMongoDBService
 
 DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - Observable
   - StitchSDK (~> 4.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - MongoSwiftMobile
+    - Observable
     - StitchCore
     - StitchCoreRemoteMongoDBService
     - StitchCoreSDK
@@ -29,13 +35,15 @@ SPEC REPOS:
     - StitchSDK
 
 SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   MongoSwiftMobile: 6a2cf9f5e27f9be7fb0eeb3440765ba32d236c2f
+  Observable: 360b0132cef970a50bc69611df7fcbda46e91c34
   StitchCore: 55514801894888f2c2daaa12d7176c1d2637722b
   StitchCoreRemoteMongoDBService: 2f76803f5795bfe0008b06197bae494a034f4211
   StitchCoreSDK: 1632259c0f561dd68aeaaf656424834fd931c13c
   StitchRemoteMongoDBService: d1327e8e4fffe7b6c76da2d0117e23e03f365067
   StitchSDK: 35035630829a60935346a79cfbd139cb7d555384
 
-PODFILE CHECKSUM: 57a30ef6370c89c98616460d10bcc0c2ec14b3ea
+PODFILE CHECKSUM: e2865341e80144c95293052e9b82108c7807e6b1
 
 COCOAPODS: 1.5.3

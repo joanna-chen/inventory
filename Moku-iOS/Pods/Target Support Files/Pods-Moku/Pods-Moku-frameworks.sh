@@ -143,6 +143,7 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${PODS_ROOT}/MongoSwiftMobile/vendor/MobileSDKs/iphoneos/lib/libbson-1.0.0.0.0.dylib"
   install_framework "${PODS_ROOT}/MongoSwiftMobile/vendor/MobileSDKs/iphoneos/lib/libbson-1.0.0.dylib"
   install_framework "${PODS_ROOT}/MongoSwiftMobile/vendor/MobileSDKs/iphoneos/lib/libbson-1.0.dylib"
@@ -150,12 +151,14 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_ROOT}/MongoSwiftMobile/vendor/MobileSDKs/iphoneos/lib/libmongoc-1.0.0.dylib"
   install_framework "${PODS_ROOT}/MongoSwiftMobile/vendor/MobileSDKs/iphoneos/lib/libmongoc-1.0.dylib"
   install_framework "${BUILT_PRODUCTS_DIR}/MongoSwiftMobile/MongoSwiftMobile.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Observable/Observable.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/StitchCore/StitchCore.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/StitchCoreRemoteMongoDBService/StitchCoreRemoteMongoDBService.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/StitchCoreSDK/StitchCoreSDK.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/StitchRemoteMongoDBService/StitchRemoteMongoDBService.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${PODS_ROOT}/MongoSwiftMobile/vendor/MobileSDKs/iphoneos/lib/libbson-1.0.0.0.0.dylib"
   install_framework "${PODS_ROOT}/MongoSwiftMobile/vendor/MobileSDKs/iphoneos/lib/libbson-1.0.0.dylib"
   install_framework "${PODS_ROOT}/MongoSwiftMobile/vendor/MobileSDKs/iphoneos/lib/libbson-1.0.dylib"
@@ -163,6 +166,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_ROOT}/MongoSwiftMobile/vendor/MobileSDKs/iphoneos/lib/libmongoc-1.0.0.dylib"
   install_framework "${PODS_ROOT}/MongoSwiftMobile/vendor/MobileSDKs/iphoneos/lib/libmongoc-1.0.dylib"
   install_framework "${BUILT_PRODUCTS_DIR}/MongoSwiftMobile/MongoSwiftMobile.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Observable/Observable.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/StitchCore/StitchCore.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/StitchCoreRemoteMongoDBService/StitchCoreRemoteMongoDBService.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/StitchCoreSDK/StitchCoreSDK.framework"
